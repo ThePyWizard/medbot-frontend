@@ -3,8 +3,9 @@ import axios from 'axios'
 
 const AuthContext = React.createContext()
 
-const serverUrl = 'http://localhost:5000/api'
+//const serverUrl = 'http://localhost:5000/api'
 // const serverUrl = 'https://agroscape-server-967ee60b99c8.herokuapp.com/api'
+const serverUrl = 'https://medbot-backend.vercel.app/api/'
 
 export const AuthContextProvider = ({children}) => {
 

@@ -1,9 +1,9 @@
 {
-    "short_name": "AgroScape",
-    "name": "AgroScape",
+    "short_name": "medbot",
+    "name": "medbot",
     "icons": [
       {
-        "src": "/agroscape.png",
+        "src": "/bloodlogo.svg",
         "sizes": "64x64 32x32 24x24 16x16 512x512 192x192",
         "type": "image/svg"
       }
