@@ -281,6 +281,7 @@ export const UserContextProvider = ({children}) => {
         console.log(time, task)
         setReminderSet(true)
         axios.post(`${serverUrl}/reminder`, {time, task, id: localStorage.getItem('id')})
+        
         if('serviceWorker' in navigator){
             navigator.serviceWorker.register('/serviceWorker.js')
             .then(reg => {
