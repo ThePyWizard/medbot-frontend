@@ -12,10 +12,10 @@
             "dest": "dist/index.html"
         }
     ],
-    "rewrites":  [
+    "rewrites": [
         {
-            "src": "/(.*)", 
-            "destination": "index.html"
+          "source": "/(.*)",
+          "destination": "/index.html"
         }
     ]
 }
