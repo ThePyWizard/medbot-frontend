@@ -1,7 +1,7 @@
 import React from 'react'
 import { useUserContext } from '../../context/UserContext'
 
-const Card = ({id, name, number, address, img}) => {
+const Card = ({id, name, number, address, img, groups_needed}) => {
 
     return (
         <div className='my-3 shadow-xl rounded px-2 py-2 h-400'>
@@ -10,6 +10,7 @@ const Card = ({id, name, number, address, img}) => {
                 <h1 className="feather font-semibold text-black">{name}</h1>
                 <h1 className="feather text-gray-500">{address}</h1>
                 <h1 className="feather text-gray-500"> {number}</h1>
+                <h1 className="feather text-red-500"> {groups_needed}</h1>
                 <a href={`tel:${number}`} className="feather bg-red-500 mt-20 text-white rounded-md px-2 py-1">Contact Now</a>
             </div>
         </div>

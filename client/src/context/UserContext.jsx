@@ -57,7 +57,7 @@ export const UserContextProvider = ({children}) => {
             number: "+91-1234567890",
             address: "City Hospital, 123 Main Street, Cityville",
             role: "Pediatrician",
-            img: "https://example.com/doctor1.jpg"
+            img: "https://assets.quickerala.com/logo/logo_443682_1687421755.jpg"
         },
         {
             _id: 2,
@@ -65,7 +65,7 @@ export const UserContextProvider = ({children}) => {
             number: "+91-9876543210",
             address: "General Hospital, 456 Park Avenue, Townsville",
             role: "General Practitioner",
-            img: "https://example.com/doctor2.jpg"
+            img: "https://assets.quickerala.com/logo/logo_437830_1665578456.png"
         },
         {
             _id: 3,
@@ -73,7 +73,7 @@ export const UserContextProvider = ({children}) => {
             number: "+91-5678901234",
             address: "Community Clinic, 789 Elm Street, Villagetown",
             role: "Gynecologist",
-            img: "https://example.com/doctor3.jpg"
+            img: "https://assets.quickerala.com/logo/logo_444197_1690181271.jpg"
         },
         {
             _id: 4,
@@ -81,15 +81,7 @@ export const UserContextProvider = ({children}) => {
             number: "+91-2345678901",
             address: "Regional Medical Center,101 Oak Lane, Countryside",
             role: "Orthopedic Surgeon",
-            img: "https://example.com/doctor4.jpg"
-        },
-        {
-            _id: 5,
-            name: "Dr. David Brown",
-            number: "+91-7890123456",
-            address: "University Hospital,321 Pine Street, Mountainville",
-            role: "Medical Specialist",
-            img: "https://example.com/doctor5.jpg"
+            img: "https://assets.quickerala.com/logo/logo_445391_1698223601.jpg"
         }
     ])
 
@@ -140,23 +132,26 @@ export const UserContextProvider = ({children}) => {
         {
             _id: 1,
             name: "District Hospital Blood Bank",
-            number: 4842625101,
+            number: 5842625101,
             address: "State Highway 16 Hospital Junction, Aluva",
-            img: "https://lh3.googleusercontent.com/p/AF1QipOrXSKjqwiirmpIFljBdT3Mt5wdIB6OqsmBTwJz=s680-w680-h510"
+            img: "https://lh3.googleusercontent.com/p/AF1QipOrXSKjqwiirmpIFljBdT3Mt5wdIB6OqsmBTwJz=s680-w680-h510",
+            groups_needed: "A+, B+, O+, AB+"
         },
         {
             _id: 2,
             name: "Blood Donors Kerala Charitable Society",
             number: 9539166565,
             address: "Star Building, AMC : 19/331,Two, FBOA Rd, Thainoth Lane, Aluva, Kerala",
-            img: "https://lh3.googleusercontent.com/p/AF1QipM0M2E-ACdeuqMIrbzxaNtCZ3ZfjU_22r3I5E_-=s680-w680-h510"
+            img: "https://lh3.googleusercontent.com/p/AF1QipM0M2E-ACdeuqMIrbzxaNtCZ3ZfjU_22r3I5E_-=s680-w680-h510",
+            groups_needed: "A+, B+, O+, AB+"
         },
         {
             _id: 3,
             name: "Indian Blood Bank Society",
             number: 7736001020,
             address: "KeraleeyamBuilding, Edappally, near M.A.J Hospital, Kochi, Kerala",
-            img: "https://cdn2.advanceinfotech.org/kozhikode.directory/1200x675/business/2662/blood-bank-wandc-hospital-in-palayam-kozhikode-kerala-673004-1676372995.webp"
+            img: "https://cdn2.advanceinfotech.org/kozhikode.directory/1200x675/business/2662/blood-bank-wandc-hospital-in-palayam-kozhikode-kerala-673004-1676372995.webp",
+            groups_needed: "A+, B+, O+, AB+"
         },
         {
             _id: 4,
@@ -164,13 +159,15 @@ export const UserContextProvider = ({children}) => {
             number: 4842479199,
             address: "574J+CWC, Chalakka, Kunnukara, Kerala 683594",
             img: "https://lh3.googleusercontent.com/p/AF1QipM-zGTvb0IInxg5sTSkluPDKMrQfYJK5tD3j09s=s680-w680-h510",
+            groups_needed: "A+, B+, O+, AB+"
         },
         {
             _id: 5,
             name: "Sunrise Institute Of Medical Sciences Private Limited Blood Bank",
             number: 4844160000,
             address: "Thrikkakara, Kakkanad, Kochi, Kerala",
-            img: "https://lh3.googleusercontent.com/p/AF1QipOfRIQYuYea9wf77fuUKS-yPSmAgbiUcOyD9wtZ=s680-w680-h510"
+            img: "https://lh3.googleusercontent.com/p/AF1QipOfRIQYuYea9wf77fuUKS-yPSmAgbiUcOyD9wtZ=s680-w680-h510",
+            groups_needed: "A+, B+, O+, AB+"
         }
     ])
 
