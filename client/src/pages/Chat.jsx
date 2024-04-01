@@ -1,5 +1,6 @@
 import React from 'react'
 import { useUserContext } from '../context/UserContext'
+import { useEffect } from 'react'
 
 const displayMessage = (message, position) => {
   if(position == 'right'){
@@ -33,6 +34,13 @@ const Chat = () => {
     setMessage('')
     sendMessage(message)
   }
+
+  useEffect(() => {
+    if (!localStorage.getItem('token')) {
+      window.location.replace('/login');
+    }
+  }, []);
+
   return (
     <div>
         {/* <div className='bg-gray-100 px-3 py-3 flex items-center'>

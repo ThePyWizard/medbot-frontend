@@ -1,6 +1,7 @@
 import React from 'react'
 import { useUserContext } from '../context/UserContext'
 import Card from '../components/Marketplace/Card'
+import { useEffect } from 'react'
 
 const MarketPlace = () => {
   const { fetchMarketplace, marketItems } = useUserContext()
@@ -14,6 +15,12 @@ const MarketPlace = () => {
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value)
   }
+
+  useEffect(() => {
+    if (!localStorage.getItem('token')) {
+      window.location.replace('/login');
+    }
+  }, []);
 
   return (
     <div className='mb-20 mt-5 px-5'>

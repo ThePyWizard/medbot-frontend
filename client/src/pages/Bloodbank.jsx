@@ -1,6 +1,7 @@
 import React from 'react'
 import { useUserContext } from '../context/UserContext'
 import Card from '../components/Bloodbank/Card'
+import { useEffect } from 'react'
 
 const BloodBank = () => {
   const { fetchBloodbank, bloodbank } = useUserContext()
@@ -15,6 +16,12 @@ const BloodBank = () => {
     setSearchQuery(e.target.value)
   }
 
+  useEffect(() => {
+    if (!localStorage.getItem('token')) {
+      window.location.replace('/login');
+    }
+  }, []);
+  
   return (
     <div className='mb-20 mt-5 px-5'>
       <div className="flex items-center mb-5">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuthContext } from '../context/AuthContext'
-
+import { useEffect } from 'react'
 
 const Profile = () => {
   const { Logout } = useAuthContext()
@@ -23,6 +23,13 @@ const Profile = () => {
         path: '/'
     }
   ]
+
+  useEffect(() => {
+    if (!localStorage.getItem('token')) {
+      window.location.replace('/login');
+    }
+  }, []);
+
   return (
     <div className='py-0 mb-20'>
       <div className='flex flex-col'>
