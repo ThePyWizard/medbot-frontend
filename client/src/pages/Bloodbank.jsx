@@ -26,18 +26,27 @@ const BloodBank = () => {
     <div className='mb-20 mt-5 px-5'>
       <div className="flex items-center mb-5">
         <select className='mr-3 feather bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline' onChange={e => setLocation(e.target.value)} name="district" id="">
+          <option value="">Select District</option>
           <option value="Kochi">Kochi</option>
           <option value="Kannur">Kannur</option>
           <option value="Ernakulam">Ernakulam</option>
         </select>
-        <input
-          type="text"
-          placeholder="Search by blood group..."
+        <select
+          className="feather bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
           value={searchQuery}
           onChange={handleSearchChange}
-          className="feather bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
           style={{ width: '200px' }}
-        />
+        >
+          <option value="">Select Blood Group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
       </div>
       <h1 className='feather font-semibold text-black text-2xl'>Donate your blood now</h1>
       <div className='grid grid-cols-2 gap-2'>
